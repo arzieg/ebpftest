@@ -36,6 +36,7 @@ recursion1: recursion1.o
 recursion2: recursion2.o 
 	$(CC) $(CFLAGS) -o $@ $^
 
+.PHONY: clean
 clean: 
 	rm recursion1
 	rm recursion2
